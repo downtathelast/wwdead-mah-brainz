@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         TESTING WWDead Mah Brainz
+// @name         WWDead Mah Brainz
 // @namespace    wwdead-mah-brainz
-// @version      1.0.1
+// @version      1.0.2
 // @description  Persistent per-character "memry" system with multi-format export
 // @author       DTTL
 // @include      /^https:\/\/wwdead\.com\/classic\/?(\?.*)?$/
@@ -62,7 +62,7 @@
   }
 
   ////////////////////////////////////////////////////////////
-  // LOCATION (TRUE GRID CENTER — STRUCTURAL DETECTION)
+  // LOCATION
   ////////////////////////////////////////////////////////////
 
   function brn_mrrh_getLocationSignal() {
@@ -417,7 +417,7 @@
   }
 
   ////////////////////////////////////////////////////////////
-  // SINGLE MEMRY EXPORT (DISCORD ANSI + FIXED)
+  // SINGLE MEMRY EXPORT (DISCORD ANSI)
   ////////////////////////////////////////////////////////////
 
   function brn_exportSingleMemry(m) {
@@ -438,7 +438,7 @@
     alert("memry copied (Discord ANSI)");
   }
   ////////////////////////////////////////////////////////////
-  // CLUSTER EXPORT (ADDED FIX)
+  // CLUSTER EXPORT
   ////////////////////////////////////////////////////////////
   function brn_exportGroupMemry(items) {
     const text = items
